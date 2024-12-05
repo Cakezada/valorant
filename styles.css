@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, rgba(125,14,14,1) 0%, rgba(156,4,4,1) 89%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #880000;
+    box-shadow: 0px 7px 10px;
+    width: 97.9%;
+}
+
+.logo-left img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+}
+
+.logo-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.logo-center p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.valorant-logo {
+    width: 250px;
+    height: 40px;
+}
+
+.shop-logo {
+    width: 130px;
+    height: 40px;
+}
+
+.logo-right {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-right input {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #880000;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding-left: 15px;
+    width: 200px;
+    height: 20px;
+}
+
+.carrinho {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.perfil {
+    width: 80px;
+}
+
+.logo-right .icon {
+    margin-left: 10px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    border: solid 2px;
+    border-radius: 30px;
+    padding: 10px 0;
+    background-color: #880000;
+    width: 1400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+/* carrosel */
+.carrossel {
+    position: relative;
+    width: 1200px; /* Ajuste a largura conforme necessário (80% da largura da tela) */
+    max-width: 1400px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    overflow: hidden;
+    align-items: center;
+    margin-top: 30px;
+    height: 650px;  
+    border-radius: 30px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel-imagem {
+    min-width: 100%;
+    height: auto;
+}
+
+.carrossel-botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #880000;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 10px;
+
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* carrosel */
+.linha {
+    border-bottom: 2px solid black;
+    width: 90vw;
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    margin-top: 70px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Aoboshi One';
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.card-link {
+    display: block; /* Faz o link ocupar toda a área do card */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do texto do card */
+}
+
+.card {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #9C0404;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.add-to-cart {
+    display: flex;
+    background-color: #4F0000; /* Cor do botão */
+    color: #9C0404;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    flex-direction:row;
+    align-items: end;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.add-to-cart:hover {
+    background-color: #9C0404; /* Cor do botão ao passar o mouse */
+    color: #4F0000;
+    border: #880000;
+    border-style: inherit;
+}
+
+.footer {
+    background-color: #4F0000; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: relative; /* Para garantir que o rodapé fique no final da página */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limite máximo de largura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-links {
+    margin-top: 10px; /* Espaçamento acima dos links */
+}
+
+.footer-links a {
+    color: white; /* Cor dos links */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.dropdown {
+    position: relative; /* Para posicionar o dropdown em relação ao ícone */
+    display: inline-block; /* Para que o dropdown fique ao lado do ícone */
+}
+
+.dropdown-content {
+    display: none; /* Esconde o dropdown por padrão */
+    position: absolute; /* Posiciona o dropdown em relação ao ícone */
+    background-color: #880000; /* Cor de fundo do dropdown */
+    min-width: 160px; /* Largura mínima do dropdown */
+    max-width: 200px; /* Largura máxima do dropdown */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra do dropdown */
+    z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+    right: 0; /* Alinha o dropdown à direita do ícone */
+    overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+.dropdown-content a {
+    color: white; /* Cor do texto */
+    padding: 12px 16px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Para alinhar ícones e texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.dropdown-content a img {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.dropdown-content a:hover {
+    background-color: #9C0404; /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Mostra o dropdown ao passar o mouse */
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda a direção do header para coluna em telas menores */
+        align-items: flex-start;
+    }
+
+    .logo-left, .logo-center, .logo-right {
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .categorias a {
+        flex: 1 1 45%; /* Ajusta o tamanho dos links das categorias */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cada card ocupa 100% em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias a {
+        flex: 1 1 100%; /* Cada categoria ocupa 100% em telas muito pequenas */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cada card ocupa 100% em telas muito pequenas */
+    }
+
+    header {
+        padding: 5px; /* Reduz o padding do header */
+    }
+}

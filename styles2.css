@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, rgba(125,14,14,1) 0%, rgba(156,4,4,1) 89%);
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #880000;
+    box-shadow: 0px 7px 10px;
+}
+
+.logo-left img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+}
+
+.logo-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.logo-center p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.valorant-logo {
+    width: 250px;
+    height: 40px;
+}
+
+.shop-logo {
+    width: 130px;
+    height: 40px;
+}
+
+.logo-right {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-right input {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #880000;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding-left: 15px;
+    width: 200px;
+    height: 20px;
+}
+.logo-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrinho {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.perfil {
+    width: 80px;
+}
+
+.logo-right .icon {
+    margin-left: 10px;
+}
+
+
+.card-large {
+    display: flex; /* Usar flexbox para alinhar os itens lado a lado */
+    align-items: center; /* Alinha os itens no início do contêiner */
+    justify-content: center;
+    height: 877px;
+}
+
+.principal-geral {
+    display: flex; /* Usar flexbox para alinhar a imagem e as opções de imagem */
+    flex-direction: column; /* Coloca a imagem e as opções de imagem em coluna */
+    margin-right: 20px; /* Espaço entre a imagem e os detalhes */
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column; /* Coloca o texto e o botão em coluna */
+    justify-content: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+#imagem-principal {
+    width: 900px; /* Defina a largura desejada */
+    height: 500px; /* Defina a altura desejada */
+    object-fit: cover; /* Isso garante que a imagem mantenha a proporção e preencha o espaço */
+}
+
+.carrossel {
+    position: relative;
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Limite máximo de largura */
+    margin: 40px auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Esconde imagens que saem do contêiner */
+    border-radius: 30px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra do carrossel */
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+.carrossel-imagem {
+    min-width: 100%; /* Cada imagem ocupa 100% do contêiner */
+    border-radius: 20px; /* Bordas arredondadas nas imagens */
+}
+
+.carrossel-botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(136, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10; /* Coloca os botões acima das imagens */
+}
+
+#prev {
+    left: 10px; /* Posição do botão anterior */
+}
+
+#next {
+    right: 10px; /* Posição do botão próximo */
+}
+
+.linha {
+    border-bottom: 2px solid black;
+    width: 90vw;
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    margin-top: 70px;
+}
+/* card principal */
+.produto-card {
+    display: flex;
+    max-width: 1200px; /* Largura máxima do card */
+    margin: 20px auto; /* Centraliza o card */
+    background-color: #a50404; /* Cor de fundo do card */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do card */
+    overflow: hidden; /* Esconde o conteúdo que transborda */
+    font-family: 'Aoboshi One';
+    color: #fff;
+}
+
+.imagem-principal {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
+
+.imagem-principal img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.detalhes-produto {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.detalhes-produto h1 {
+    margin: 0 0 10px; /* Margem inferior */
+}
+
+.detalhes-produto h2 {
+    margin: 0 0 20px; /* Margem inferior */
+    color: #7c7878; /* Cor do subtítulo */
+}
+
+.detalhes-produto p {
+    margin: 0 0 20px; /* Margem inferior */
+}
+
+.add-to-cart {
+    background-color: #4F0000; /* Cor do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: 'Aoboshi One';
+
+}
+
+.add-to-cart:hover {
+    background-color: #ac0404; /* Cor do botão ao passar o mouse */
+    border: 2px #4F0000;
+    border-style: solid;
+}
+
+.carrossel-imagens {
+    display: flex; /* Exibe as imagens em linha */
+    justify-content: center; /* Centraliza as imagens */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.carrossel-imagens img {
+    width: 80px; /* Largura das imagens do carrossel */
+    height: auto; /* Mantém a proporção */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    cursor: pointer; /* Cursor de ponteiro */
+    border: 2px solid transparent; /* Borda transparente */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.carrossel-imagens img:hover {
+    border-color: #4F0000; /* Borda ao passar o mouse */
+}
+/* card principal */
+.footer {
+    background-color: #4F0000; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    position: relative; /* Para garantir que o rodapé fique no final da página */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Largura total */
+    margin-top: 38px;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limite máximo de largura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-links {
+    margin-top: 10px; /* Espaçamento acima dos links */
+}
+
+.footer-links a {
+    color: white; /* Cor dos links */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.dropdown {
+    position: relative; /* Para posicionar o dropdown em relação ao ícone */
+    display: inline-block; /* Para que o dropdown fique ao lado do ícone */
+}
+
+.dropdown-content {
+    display: none; /* Esconde o dropdown por padrão */
+    position: absolute; /* Posiciona o dropdown em relação ao ícone */
+    background-color: #880000; /* Cor de fundo do dropdown */
+    min-width: 160px; /* Largura mínima do dropdown */
+    max-width: 200px; /* Largura máxima do dropdown */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra do dropdown */
+    z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+    right: 0; /* Alinha o dropdown à direita do ícone */
+    overflow: hidden; /* Evita que o conteúdo transborde */
+}
+
+.dropdown-content a {
+    color: white; /* Cor do texto */
+    padding: 12px 16px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Para alinhar ícones e texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.dropdown-content a img {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.dropdown-content a:hover {
+    background-color: #9C0404; /* Cor de fundo ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Mostra o dropdown ao passar o mouse */
+}
+
+.opcoes-imagens {
+    display: flex;
+    justify-content: center; /* Centraliza as opções de imagens */
+    margin-top: 10px; /* Espaçamento acima das opções */
+}
+
+.imagem-opcao {
+    width: 150px; /* Largura das imagens em miniatura */
+    height: auto; /* Altura automática */
+    margin: 0 5px; /* Margem entre as imagens */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border: 2px solid transparent; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border 0.3s; /* Transição suave para a borda */
+}
+
+.imagem-opcao:hover {
+    border: 2px solid #9C0404; /* Borda ao passar o mouse */
+}
+
+.imagem-opcao.selecionada {
+    border: 2px solid #4F0000; /* Borda para a imagem selecionada */
+}

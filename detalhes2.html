@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="detalhes.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-left">
+            <a href="https://playvalorant.com/pt-br/" target="_blank">
+                <img src="./imgs/valorant logo icon.png" alt="Logo Ícone" class="icon">
+            </a>
+        </div>
+        <div class="logo-center">
+            <a href="index.html" class="logo-link">
+            <p><img src="./imgs/valorant logo.png" alt="" class="valorant-logo"></p>
+            <p><img src="./imgs/shop logo.png" alt="" class="shop-logo"></p>
+        </a>
+        </div>
+        <div class="logo-right">
+            <input type="text" placeholder="Pesquisar...">
+            <a href="#" class="icon"><img src="./imgs/carrinho de compras.png" alt="Carrinho de Compras" class="carrinho"></a>
+            <div class="dropdown">
+                <a href="#" class="icon" id="profile-icon">
+                    <img src="./imgs/perfil icone.png" alt="Perfil" class="perfil">
+                </a>
+                <div class="dropdown-content" id="dropdown-menu">
+                    <a href="#"><img src="./imgs/perfil icone.png" alt="Perfil">Perfil</a>
+                    <a href="#"><img src="./imgs/configurações.png" alt="Configurações">Configurações</a>
+                    <a href="#"><img src="./imgs/ajuda.png" alt="Ajuda">Ajuda</a>
+                    <a href="#"><img src="./imgs/notificações.png" alt="Notificações">Notificações</a>
+                    <a href="#"><img src="./imgs/logout.png" alt="Logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="produto-card">
+        <div class="imagem-principal">
+            <img id="imagem-principal" src="./imgs/phantom reconhecimento.png" alt="Imagem Principal">
+        </div>
+        <div class="detalhes-produto">
+            <h1>Phantom Reconhecimento</h1>
+            <h2>Price: 1775 VP</h2>
+            <h4>Parte da Coleção Reconhecimento</h4>
+
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <div class="carrossel-imagens">
+        <img src="./imgs/kuronami original.jpg" alt="Imagem 1" class="imagem-carrossel" onclick="mudarImagem('./imgs/kuronami original.jpg')">
+        <img src="./imgs/kuronami branca 1.png" alt="Imagem 2" class="imagem-carrossel" onclick="mudarImagem('./imgs/kuronami branca 1.png')">
+        <img src="./imgs/kuronami roxa.png.jpg" alt="Imagem 3" class="imagem-carrossel" onclick="mudarImagem('./imgs/kuronami roxa.png.jpg')">
+        <img src="./imgs/kuronami preta1.png" alt="Imagem 4" class="imagem-carrossel" onclick="mudarImagem('./imgs/kuronami preta1.png')">
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Valorant Shop. Todos os direitos reservados.</p>
+            <p>Site pensado e criado por Caique Canavan Medeiros</p>
+            <div class="footer-links">
+                <a href="#">Sobre Nós</a>
+                <a href="https://wa.me/15988200351" target="_blank">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        function mudarImagem(src) {
+            document.getElementById('imagem-principal').src = src; // Muda a imagem principal
+        }
+    </script>
+    
+</body>
+</html>
